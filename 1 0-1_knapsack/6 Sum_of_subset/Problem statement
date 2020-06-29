@@ -1,0 +1,55 @@
+Problem name is sum of subset .
+This problem is the varriation of knapsack problem so you can easily solve this problem similar to knapsack.
+So let comes to here 
+Here will be given a array of integer where we have to find a set which has target sum.
+example --
+1-	input -	arr[] ={1,4,2,6} and Sum=6
+	output- 	True (sum six is possible)
+2- 	input 		arr[]={1,4,2,6} and sum=8
+	output-	false (sum siz is not possible)
+
+Now you got the question lets comes to soluton.
+
+Brute Forces Appraoch - it is same chosseing one element and igonring it one time.
+recusion is use here--
+let basic code is --
+		Sum_of_Subset(vector <int> arr,int curr, sum)
+		{
+			if (sum==0)
+				return true;
+			else if (curr==-1)
+				return false;
+			else 
+			{
+				if (arr[curr]<=sum)
+					return Sum_of_Subset(arr,curr-1,sum-arr[curr])||Sum_of_Subset(arr,curr-1,sum);
+				else 
+					return Sum_of_Subset(arr,curr-1,sum); 
+			}
+		}
+	This the the Recursive code the it has complexity of 2^n complexity
+	Lets understand how this complexity come
+	Note every element has choice of chossing one time and not chossing one time .It makes 2 chioce for every element .You can also 
+	see in the code each element has 2 choice.
+	of 2^n is complexity.
+	Recursive Calling ---{1,4} input its just like this
+			{}
+		      /   \
+		    /      \
+		   /        \
+		 {1}        {}	
+	       /   \       /   \
+	      /     \     /	 \
+	     {1,4}  {4} {4}      {} 
+	that why complexity is 2^n
+
+
+Now comes to better approach 
+(1) dynamic Programming using memozitaion ---
+	memorization technique using 
+	in every call we store the result in dp.
+(2) Top-Down Approach of Dynamic Programming 
+	it is iterative version of dynamic programming
+	
+	Both the solution are present the 2 file.
+	she that.

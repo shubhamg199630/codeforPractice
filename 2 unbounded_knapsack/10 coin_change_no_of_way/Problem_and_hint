@@ -1,0 +1,25 @@
+Problem is very nice.
+Lets understand it first
+	we have given some coin in infinity supply and we have to make the given sum.But we have give number of ways to get that.
+	example 
+		coin ={ 1,2,3}
+		target sum= 5;
+		output =5
+		explanation number of ways== 2+3,1+1+3,2+2+1,1+1+1+2,1+1+1+1+1 all have sum=5 so number of ways is 5(count of all)
+		This is the problem 
+		lets comes to the solution 
+		the Problem say it infinity supply of coin means that it cannot be knapsack problem.
+		and each of coin have choice has select it or not.So its definety unbouded knapsack Problem.
+		
+		lets understand the corner cases if arr is empty and sum is 0 whether is possible??
+			yes possible {} empty set
+		similarty sum is 1 and coin is [] then no possible 
+		sum 2,3....all are 0
+		Now coin size is 1 and sum=0  posssible empty
+		   coin size is 2 and sum=0 possible
+		  so coin 3,4,5 and sum=0 all possible
+		  
+		  This problem is very simlar to count_number_of subset
+		  
+		  solution is also same.
+		    

@@ -1,0 +1,18 @@
+Problem
+question is you have to divide the given sum into 2 subset set such that diff is equal to diff a given number
+example {1,1,2,3} and diff=1;
+	sets are= {1,2} and {1,3}
+	sets are={1,2} and {1,3};
+	sets are {1,1,2} and {3}
+	all the set have diff =1;
+
+solution 
+read min_diff_subset first then come here
+solution is very easy after you read that problem
+Note the range is sum of array;
+we know s1+s2=range;
+and s1-s2=diff;
+so adding two 2s1=range+diff
+s1=(range+diff)/2;
+	that is we have to count number of subset of (range+diff)/2
+	thats solve;

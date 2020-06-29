@@ -1,0 +1,44 @@
+This Problem is very nice.
+Note that memorization technique is not wokring here for solution because we required min diff and no perfect target is given here.
+Lets understand the question first before comeing to solution.
+
+Here given
+	input arr[1,3,7} 
+	output 3
+	Question we have to divide the given set into 2 set whose diff is minimum.
+	in example {1,3} has sum =4 and {7} has sum =7
+		diff= 7-4 =3	(solution)
+		
+	so I think you got the question . We have to divide the given set so that their diff is minimum as possible.
+	
+	Solution approach -
+	
+	We have to find two set of minimum difference thats good But its look difficult try to think little more.
+	This problem is easy and you will get easily.
+	
+	okay look here-
+		what can be maximum possible answer???
+		worst case answer will be equal to sum of array example {123} .Its answer is 123
+		so answer can very from 0 to range of array sum.
+		so 0 to range (sum ).
+		so we have to divide range into two set of minimum diff. 
+		example in example {1,3,7} has range =11;
+		so if one is {1}  1 and other is {3,7} with is 10.
+		so if s1 and s2 are two divided set than (s1+s2=range)    /Very important point .
+		if one set is s1 then other is (range -s1) automatically.
+		
+		We have to include all element is one of the two set.
+		So if you notice the problem of sum of subset the last row has contain in top down approach
+		has all element included and check for whether is contain sum of 0,1,2,3,.....range .
+		
+		So let back to min diff if one set is s1 and other is (range -s1).
+		min if (range-s1 -s1)= range-2*s1 (if s1 is lass than (range/2)).
+		
+		
+		So last row will give all possible sum and we have to subtract it from range-(2*that sum).
+		that the solution 
+		minimum positive will be solution.
+		l
+		
+		
+		

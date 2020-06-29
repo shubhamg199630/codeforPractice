@@ -1,0 +1,19 @@
+This problem is nice.
+THE name suggest that what the problem
+The rod Cutting problem .Here you have to cut the given rod so that the profit is maximum.
+	given will be n the length of the rod ,profit array and length of rod array
+	example profit array -- [30,20,30,40];
+		length array -- [1,2,3,4]
+		n -- 4
+		output =120
+		explanation is [selling length of 1 will give maximum profit .
+		
+		
+		Solution is the same unbounded knapsack 
+		
+		see solution
+
+
+
+		
+		

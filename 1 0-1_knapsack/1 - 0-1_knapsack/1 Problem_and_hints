@@ -1,0 +1,14 @@
+This problem is standared 0-1 knapsack problem.
+	you have given a weight array and the value array>Its mean that 
+	we have n object and each of them is having some weight and and value associcated with them 
+	Now what happen that the capacity of your bag is only m.So you can fit only maximum weight.
+	example is that
+	input weight {10,20,30,40,50}
+		value {30.20,40,50,60};
+		now m is 100
+		output =140
+		
+		
+	Solution is very simple
+		we know the recursive solution that we have to choose to pick one element and not to pick same element .
+		
