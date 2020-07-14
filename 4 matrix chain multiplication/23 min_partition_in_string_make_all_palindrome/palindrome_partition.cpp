@@ -30,6 +30,7 @@ int string_partition_palindrome(string s,int i, int j){
 				}
 				mi=min(mi,temp);
 			}
+			dp[i][j]=mi;
 			return mi;
 		}
 	}
@@ -50,7 +51,7 @@ void printdp(int m, int n)
 }
 int main()
 {
-	string s="nehe";
+	string s="ueokcxsxomszsnsnhmlqlggkrnarwtkszaebxw";
 	int n=s.size();
 	int j=n-1,i=1;
 	intialization_of_dp();
